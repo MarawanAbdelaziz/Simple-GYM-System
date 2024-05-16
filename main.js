@@ -63,10 +63,6 @@ let trainers = [
   },
 ];
 
-// req.body.id = users.length + 1;
-// users.push(req.body);
-// res.json({ message: done, usres: users });
-
 // Members API
 app.post("/member", (req, res, next) => {
   members.push({ id: members.length + 1, ...req.body });
